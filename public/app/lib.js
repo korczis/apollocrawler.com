@@ -19,49 +19,45 @@
 // THE SOFTWARE.
 
 (function (global) {
-    require(["ember"], function(ember) {
+    require(["ember"], function (ember) {
         // See https://github.com/zeflasher/ember-require-js/blob/master/app/js/main.js
-        require
-        (
-            [
-                //  Application
-                'app',
+        var deps = [
+            //  Application
+            'app',
 
-                //  Router
-                '../app/logger.js',
-                '../app/router.js',
-                '../app/storage.js',
-                '../app/xhr.js',
+            //  Router
+            '../app/logger.js',
+            '../app/router.js',
+            '../app/storage.js',
+            '../app/xhr.js',
 
-                // Helpers
-                '../app/helpers/cond.js',
-                '../app/helpers/datetime.js',
-                '../app/helpers/linkTo.js',
-                '../app/helpers/math.js',
-                '../app/helpers/misc.js',
-                '../app/helpers/object.js',
+            // Helpers
+            '../app/helpers/cond.js',
+            '../app/helpers/datetime.js',
+            '../app/helpers/linkTo.js',
+            '../app/helpers/math.js',
+            '../app/helpers/misc.js',
+            '../app/helpers/object.js',
 
-                // Routes
-                '../app/routes/admin/index.js',
-                '../app/routes/application.js',
+            // Routes
+            '../app/routes/admin/index.js',
+            '../app/routes/application.js',
                 '../app/routes/about/index.js',
                 '../app/routes/datapacks/index.js',
                 '../app/routes/demo/index.js',
                 '../app/routes/projects/index.js',
 
-                // Templates
-                '../assets/templates.js',
+            // Templates
+            '../assets/templates.js',
 
-                "exports"
-            ],
+            "exports"
+        ];
 
-            function (App, exports)
-            {
-                App.initialize();
+        require(deps, function (App, exports) {
+            App.initialize();
 
-                return App;
-            }
-        );
+            return App;
+        });
     });
 
 
