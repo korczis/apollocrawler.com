@@ -81,6 +81,9 @@ git clone https://github.com/korczis/microscratch.git
   ```
   # Install grunt and bower
   sudo npm install -g bower mocha mocha-phantomjs phantomjs grunt grunt-cli forever jsdoc@3.2.1
+
+  # Install sass ruby gem
+  sudo gem install sass
   
   # Clone repository
   git clone http://github.com/korczis/microscratch.git
