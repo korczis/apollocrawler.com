@@ -28,17 +28,7 @@
      * @type {{name: string, googleAnalytics: {enabled: boolean, id: string, host: string}}}
      */
     var app = {
-            	name: "apllocrawler",
-
-        // You can override default route here
-        // indexRoute: "admin",
-
-        // Google analytics section
-        googleAnalytics: {
-            enabled: true,
-                    id: 'UA-47699219-1',
-                    host: 'apollocrawler.com'
-        }
+        name: "MicroScratch"
     };
 
     /**
